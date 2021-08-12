@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lâmpada</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+
+    img:hover {
+      cursor: pointer;
+    }     
+   
+  </style>
+</head>
+<body>
+  <h1>Clique na lâmpada!</h1>
+  <img class="imagem" src="https://raw.githubusercontent.com/gabrieldarezzo/helpjs-ravi/master/images/lampada.jpg" alt="Lâmpada apagada">
+
+  <script>
+    document.querySelector(".imagem").addEventListener("click", ligarDesligar);
+    let lâmpada = document.querySelector(".imagem");
+    let ligada = "https://raw.githubusercontent.com/gabrieldarezzo/helpjs-ravi/master/images/lampada-on.jpg";
+
+    function ligarDesligar() {
+      if (lâmpada.src == ligada){
+        lâmpada.src = "https://raw.githubusercontent.com/gabrieldarezzo/helpjs-ravi/master/images/lampada.jpg";
+      } else {
+        lâmpada.src = "https://raw.githubusercontent.com/gabrieldarezzo/helpjs-ravi/master/images/lampada-on.jpg";
+      }
+    }
+  </script>
+</body>
+</html>
