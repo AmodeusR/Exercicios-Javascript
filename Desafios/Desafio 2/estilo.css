@@ -1,0 +1,61 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background: olivedrab;
+}
+
+.titulo {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.subtitulo {
+  font-size: 1.2rem;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  width: min(40%, 50rem);
+  padding: 4rem;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+.cpf {
+  width: min(40%, 17rem);
+  padding: .4rem;
+  border-radius: 8px;
+  border: 2px solid rgb(27, 27, 27);
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.cpf:focus {
+  outline: none;
+  background: rgba(0, 0, 0, 0);
+}
+
+.button {
+  margin-top: 1rem;
+  padding: .5rem 3rem;
+}
+
+.resultado {
+  margin-top: 2rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+/* Retirar setas que ficam à direita do input de números */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}

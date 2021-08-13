@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formatador de CPF</title>
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+      <h1 class="titulo">Formatador de CPF</h1>
+      <h2 class="subtitulo">Escreva seu CPF sem pontuação para aparecer corretamente formatado</h2>
+      <input class="cpf" type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="11">
+      <input class="button" type="button" value="Processar">
+
+      <div class="resultado"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
