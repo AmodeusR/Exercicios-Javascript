@@ -1,0 +1,21 @@
+button {
+  display: block;
+  margin: 1rem auto;
+  color: white;
+  background: #444;
+  border: none;
+  padding: 2em 4em;
+}
+
+button:active {
+  background: #333;
+}
+
+body {
+  margin: 0;
+  background: palevioletred;
+}
+.listener {
+  background: lightblue;
+  padding: 3rem;
+}
